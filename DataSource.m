@@ -1,20 +1,18 @@
-//
+//Terry Lewis
 //  JSDataSource.m
 //
 //
-//  Created by Terry Lewis II on 6/14/13.
-//  
 //
 
-#import "iTenDataSource.h"
+#import "DataSource.h"
 
-@interface iTenDataSource ()
+@interface DataSource ()
 @property(nonatomic, strong) NSArray *items;
 @property(nonatomic, copy) NSString *cellIdentifier;
 @property(nonatomic, copy) CellConfigureBlock configureCellBlock;
 @end
 
-@implementation iTenDataSource
+@implementationDataSource
 
 - (instancetype)initWithItems:(NSArray *)items cellIdentifier:(NSString *)identifier configureCellBlock:(CellConfigureBlock)block {
     self = [super init];

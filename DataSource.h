@@ -1,16 +1,13 @@
-//
+//Terry Lewis
 //  JSDataSource.h
 //  
-//
-//  Created by Terry Lewis II on 6/14/13.
-//
 //
 
 #import <Foundation/Foundation.h>
 
 typedef void (^CellConfigureBlock)(id cell, id item, id indexPath);
 
-@interface iTenDataSource : NSObject <UITableViewDataSource, UICollectionViewDataSource>
+@interface DataSource : NSObject <UITableViewDataSource, UICollectionViewDataSource>
 /**
  * A datasource class that can serve as both a UITableView and UICollectionView datasource.
  *\param items the array that will serve as the datasource.
